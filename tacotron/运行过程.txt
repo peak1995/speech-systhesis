@@ -1,0 +1,14 @@
+conda create -n pytf python=3.6
+
+Source activate pytf
+
+Source deactivate pytf
+
+Conda remove -n pytf --all
+
+python3 demo_server.py --checkpoint ~/Desktop/tacotron-20180906/model.ckpt
+
+
+Point your browser at localhost:9000
+
+python3 demo_server.py --checkpoint ~/Desktop/tacotron/tacotron-moxing/model.ckpt
